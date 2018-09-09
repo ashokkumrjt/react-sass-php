@@ -8,10 +8,13 @@ class Title extends Component {
     }
 
     render() {
+
+        const { title, description } = this.props;
+
         return ( 
             <div className='title-container'>
-                <h2>Title component</h2>
-                <p>Title description, loream ipsum dolor</p>
+                <h2>{ title }</h2>
+                <p>{ description }</p>
             </div>
         );
     }
