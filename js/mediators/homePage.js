@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import Hello from '../../components/hello';
+import Title from '../../components/title';
 
 const wrapper = document.getElementById('app');
 
-ReactDOM.render(<Hello/>, wrapper);
+ReactDOM.render(<Title/>, wrapper);
