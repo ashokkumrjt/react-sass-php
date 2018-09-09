@@ -3,10 +3,17 @@
     <meta charset="utf-8">
     <title>React, Webpack, and Babel</title>
     <link rel="stylesheet" type="text/css" href="../public/styles/homePage.css"/>
+    <script>
+        var appData = {
+            components: []
+        };
+    </script>
 </head>
 <body>
-    <div id="app">
-    </div>
+    <div class='react-component title-component' data-id='12345' data-component='title'></div>
+    <script>
+        appData.components.push({"component":"title","id":"12345","renderType":"client","attributes":{"title":"Title component","description":"Title component description"},"services":""});
+    </script>
     <script src='../public/js/homePage.js'></script>
 </body>
 </html>

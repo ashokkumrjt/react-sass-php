@@ -1,8 +1,23 @@
-import React from "react";
-import ReactDOM from "react-dom";
+'use strict';
 
+import renderReact from '../modules/renderReact';
+
+// Components
 import Title from '../../components/title';
 
-const wrapper = document.getElementById('app');
+const mediator = {
 
-ReactDOM.render(<Title/>, wrapper);
+    init() {
+
+        this.initReact();
+    },
+
+    initReact() {
+
+        renderReact( Title, 'title');
+    }
+};
+
+document.addEventListener( 'DOMContentLoaded', () => {
+    mediator.init();
+});
