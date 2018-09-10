@@ -4,7 +4,7 @@ const path = require('path');
 
 const serverLocation = 'public/';
 
-const assetsPath = '/assets/';
+const assetsPath = 'assets/';
 
 module.exports = {
 
@@ -50,8 +50,8 @@ module.exports = {
                     options: {
                         limit: 8192,
                         name: '[name].[ext]' ,
-                        publicPath: `${assetsPath}images/`,
-                        outputPath: `${assetsPath}images/`
+                        publicPath: `/${assetsPath}images/`,
+                        outputPath: `/${assetsPath}images/`
                     }
                 }]
             },
@@ -60,8 +60,8 @@ module.exports = {
                 loader: 'file-loader',
                 options: {
                     name: '[name].[ext]' ,
-                    publicPath: `${assetsPath}fonts/`,
-                    outputPath: `${assetsPath}fonts/`
+                    publicPath: `./../${assetsPath}fonts/`,
+                    outputPath: `/${assetsPath}fonts/`
                 },
             },
         ]
