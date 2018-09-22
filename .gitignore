@@ -3,4 +3,6 @@
 package-lock.json
 
 # production
-/public
+/public/assets
+/public/js
+/public/styles
